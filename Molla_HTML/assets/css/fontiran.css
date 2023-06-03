@@ -87,4 +87,4 @@ This set of fonts are used in this project under the license: (.....)
     unicode-range: U+30-39;
 }
 
-html body *{font-family: IranYekanFarsiNumbers, IRANSans !important; }
+html body * :not(.la){font-family: IranYekanFarsiNumbers, IRANSans ; }
