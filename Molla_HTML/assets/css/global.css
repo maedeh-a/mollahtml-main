@@ -144,9 +144,10 @@ body .menu .banner-content.banner-content-top {
 	transform: translateY(0);
 	-ms-transform: translateY(0);
 }
-body .header-bottom .menu .megamenu.megamenu-md {
+body .main-nav .megamenu.megamenu-md {
 	left: -10rem;
 	left: auto;
+	right: 0;
 	width: 694px;
 }
 body .menu .menu-title {
@@ -193,6 +194,9 @@ body .newsletter-popup-container .custom-control-label::before, body .newsletter
 body .custom-control-label {
 	margin-left: 0.4rem;
 }
+body .label4512{
+	margin-right: 2.4rem;
+}
 body .mfp-close {
 
 	font: normal normal 2.6rem/1 'molla' !important;
@@ -202,8 +206,30 @@ body .ratings::before, .ratings-val::before {
 	content: "\f318" "\f318" "\f318" "\f318" "\f318";
 	font: normal normal 1.6rem/1 'molla' !important;
 }
-
+.form-tab .form-group {
+	text-align: right;
+}
+body .form-tab .form-footer .btn {
+	margin-left: 1.6rem;
+	margin-right: 0;
+	order: -1;
+}
+body .btn.btn-login i {
+	text-align: right;
+	display: inline-block;
+	margin-right: 0 !important;
+	margin-left: 0 !important;
+	min-width: 2rem;
+}
+body .form-tab .form-footer .forgot-link {
+	order: 2;
+	width: auto;
+	margin-bottom: 0;
+	margin-right: auto;
+	margin-left: 0;
+}
 /* mobile style */
+/* index-9 */
 @media (max-width: 992px) {
 	.page-wrapper .header .header-top .header-right {
 		margin-left: auto;
@@ -244,4 +270,66 @@ body .ratings::before, .ratings-val::before {
 		margin-right: 0;
 	}
 
+}
+/* cart */
+body .page-wrapper .header-dropdown > a.cart-link-header::after, .header-dropdown > span::after {
+	font-family: "molla";
+	content: '\f110';
+	position: absolute;
+	right: 0 ;
+	left: unset;
+	top: 50%;
+	display: inline-block;
+	font-size: 1.2rem;
+	line-height: 1;
+	margin-top: -.7rem;
+}
+.header-left .main-nav {
+	margin-right: 2rem;
+}
+.breadcrumb-nav .breadcrumb-item + .breadcrumb-item::before {
+	color: #999999;
+	content: '\f111';
+	font-family: "molla";
+	padding-left: .7rem;
+	font-size: 1.1rem;
+	vertical-align: middle;
+	margin-top: -.1rem;
+}
+.table  tr{
+	text-align: right;
+}
+body .product-col .product {
+	display: flex;
+	align-items: center;
+	margin: 0;
+	padding-left: 2rem;
+	box-shadow: none;
+	padding-right: 0;
+}
+body .product-col .product-media {
+	display: inline-block;
+	margin: 0;
+	margin-right: 0;
+	margin-left: 2.8rem;
+	flex-shrink: 0;
+	max-width: 60px;
+}
+body .cart-bottom .btn {
+	margin-right: auto;
+	min-width: 152px;
+	margin-left: 0;
+}
+body .cart-discount .form-control {
+	margin-left: 1.1rem;
+	margin-right: 0;
+}
+body .custom-control-label::before {
+	right: 0;
+	top: .6rem;
+	width: 1.6rem;
+	height: 1.6rem;
+	background-color: #f9f9f9;
+	border: 1px solid #dadada;
+	box-shadow: none !important;
 }
