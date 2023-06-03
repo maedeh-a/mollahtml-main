@@ -1,4 +1,5 @@
 /* rtl style */
+@import url(../css/fontiran.css);
 /* index9-rtl */
 .page-wrapper .header .header-top .header-right{
     margin-right: auto;
@@ -114,4 +115,133 @@ body .instagram-feed-content a + a {
 }
 .page-wrapper .footer .widget{
     text-align: right;
+}
+body .footer .footer-bottom .social-icons {
+	margin-left: 0;
+	margin-right: auto;
+	margin-bottom: 1rem;
+}
+.footer .social-label {
+	margin-bottom: 0;
+	margin-left: 2rem;
+    margin-right: 0;
+}
+.footer .footer-menu li + li::before {
+	right: -1.1rem;
+}
+.footer .footer-menu li + li {
+	margin-right: 2.1rem;
+    margin-left: 0;
+}
+.footer .footer-copyright {
+	margin-left:1rem;
+	text-align: right;
+}
+body .menu .banner-content.banner-content-top {
+	left: 2rem;
+	text-align: right;
+	top: 2.4rem;
+	transform: translateY(0);
+	-ms-transform: translateY(0);
+}
+body .header-bottom .menu .megamenu.megamenu-md {
+	left: -10rem;
+	left: auto;
+	width: 694px;
+}
+body .menu .menu-title {
+	text-align: right;
+}
+body .menu .megamenu > ul,body .menu .megamenu div > ul {
+	text-align: right;
+}
+.menu span.tip {
+	right: 100%;
+
+}
+body .menu ul {
+	min-width: 218px;
+	padding: 1.6rem 0 2rem;
+	text-align: start;
+}
+body .menu ul ul {
+	top: -1.6rem;
+	right: 100%;
+}
+body .menu.sf-arrows ul .sf-with-ul::after {
+	content: '\f111';
+	right: 8rem;
+}
+body .cart-dropdown .product-title {
+	text-align: start;
+}
+body .cart-dropdown .product-cart-details {
+
+	text-align: right;
+}
+body .btn i:last-child {
+	margin-right: 1rem;
+	margin-left: 0;
+}
+body .dropdown-cart-total .cart-total-price {
+	margin-right: auto;
+	margin-left: 0;
+}
+body .newsletter-popup-container .custom-control-label::before, body .newsletter-popup-container .custom-control-label::after {
+	right: 0.5rem;
+}
+body .custom-control-label {
+	margin-left: 0.4rem;
+}
+body .mfp-close {
+
+	font: normal normal 2.6rem/1 'molla' !important;
+
+}
+body .ratings::before, .ratings-val::before {
+	content: "\f318" "\f318" "\f318" "\f318" "\f318";
+	font: normal normal 1.6rem/1 'molla' !important;
+}
+
+/* mobile style */
+@media (max-width: 992px) {
+	.page-wrapper .header .header-top .header-right {
+		margin-left: auto;
+	}
+	body .header-6 .logo {
+
+		right: 1rem;
+
+	}
+	body .header-right {
+		margin-right: 100px;
+	}
+	body .header-6 .wishlist-txt, .header-6 .cart-txt {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	body .page-wrapper .cart-dropdown {
+		padding-right: 1.5rem;
+		padding-left: 0;
+	}
+	body .header.header-6 .header-bottom .header-right {
+		padding-right: 4rem;
+	}
+	body .cta .cta-title {
+		font-size: 1.8rem;
+	}
+	body .newsletter-popup-container .custom-control-label::before, body .newsletter-popup-container .custom-control-label::after {
+		right: 0.5rem;
+	}
+	body .custom-control-label {
+		margin-left: -8.6rem;
+	}
+	body .page-wrapper .intro-slide .intro-content {
+		width: 90%;
+	}
+	body .footer .footer-bottom .social-icons {
+		margin-left: 0;
+		margin-right: 0;
+	}
+
 }
