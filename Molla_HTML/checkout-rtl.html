@@ -24,8 +24,8 @@
     <!-- Plugins CSS File -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <!-- Main CSS File -->
-    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
@@ -606,7 +606,7 @@
         <main class="main">
         	<div class="page-header text-center" style="background-image: url('assets/images/page-header-bg.jpg')">
         		<div class="container">
-        			<h1 class="page-title">سبد خرید<span>فروشگاه</span></h1>
+        			<h1 class="page-title">وارسی<span>فروشگاه</span></h1>
         		</div><!-- End .container -->
         	</div><!-- End .page-header -->
             <nav aria-label="breadcrumb" class="breadcrumb-nav">
@@ -614,157 +614,243 @@
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="index.html">خانه</a></li>
                         <li class="breadcrumb-item"><a href="#">فروشگاه</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">سبد خرید</li>
+                        <li class="breadcrumb-item active" aria-current="page">وارسی</li>
                     </ol>
                 </div><!-- End .container -->
             </nav><!-- End .breadcrumb-nav -->
 
             <div class="page-content">
-            	<div class="cart">
+            	<div class="checkout">
 	                <div class="container">
-	                	<div class="row">
-	                		<div class="col-lg-9">
-	                			<table class="table table-cart table-mobile">
-									<thead>
-										<tr>
-											<th>محصولات</th>
-											<th>قیمت</th>
-											<th>تعداد</th>
-											<th>قیمت کل</th>
-											<th></th>
-										</tr>
-									</thead>
+            			<div class="checkout-discount">
+            				<form action="#">
+        						<input type="text" class="form-control" required id="checkout-discount-input">
+            					<label for="checkout-discount-input" class="text-truncate">آیا کوپن دارید؟ <span>برای وارد کردن کد خود اینجا را کلیک کنید</span></label>
+            				</form>
+            			</div><!-- End .checkout-discount -->
+            			<form action="#">
+		                	<div class="row">
+		                		<div class="col-lg-9">
+		                			<h2 class="checkout-title text-right">جزئیات صورتحساب</h2><!-- End .checkout-title -->
+		                				<div class="row">
+		                					<div class="col-sm-6">
+                                                <div class="d-flex flex-column align-items-start">
+                                                    <label>نام </label>
+                                                    <input type="text" class="form-control" required>
+                                                </div>
 
-									<tbody>
-										<tr>
-											<td class="product-col">
-												<div class="product">
-													<figure class="product-media">
-														<a href="#">
-															<img src="assets/images/products/table/product-1.jpg" alt="Product image">
-														</a>
-													</figure>
+		                					</div><!-- End .col-sm-6 -->
 
-													<h3 class="product-title">
-														<a href="#">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</a>
-													</h3><!-- End .product-title -->
-												</div><!-- End .product -->
-											</td>
-											<td class="price-col">تومان84.00</td>
-											<td class="quantity-col">
-                                                <div class="cart-product-quantity">
-                                                    <input type="number" class="form-control" value="1" min="1" max="10" step="1" data-decimals="0" required>
-                                                </div><!-- End .cart-product-quantity -->
-                                            </td>
-											<td class="total-col">تومان84.00</td>
-											<td class="remove-col"><button class="btn-remove"><i class="icon-close"></i></button></td>
-										</tr>
-										<tr>
-											<td class="product-col">
-												<div class="product">
-													<figure class="product-media">
-														<a href="#">
-															<img src="assets/images/products/table/product-2.jpg" alt="Product image">
-														</a>
-													</figure>
+		                					<div class="col-sm-6">
+                                                <div class="d-flex flex-column align-items-start">
+                                                    <label>نام خانوادگی</label>
+                                                    <input type="text" class="form-control" required>
+                                                </div>
 
-													<h3 class="product-title">
-														<a href="#">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</a>
-													</h3><!-- End .product-title -->
-												</div><!-- End .product -->
-											</td>
-											<td class="price-col">تومان76.00</td>
-											<td class="quantity-col">
-                                                <div class="cart-product-quantity">
-                                                    <input type="number" class="form-control" value="1" min="1" max="10" step="1" data-decimals="0" required>
-                                                </div><!-- End .cart-product-quantity -->                                 
-                                            </td>
-											<td class="total-col">تومان76.00</td>
-											<td class="remove-col"><button class="btn-remove"><i class="icon-close"></i></button></td>
-										</tr>
-									</tbody>
-								</table><!-- End .table table-wishlist -->
+		                					</div><!-- End .col-sm-6 -->
+		                				</div><!-- End .row -->
+                                        <div class="col-12 p-0">
+                                            <div class="d-flex flex-column align-items-start">
+                                                <label>نام شرکت (اختیاری)</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
 
-	                			<div class="cart-bottom">
-			            			<div class="cart-discount">
-			            				<form action="#">
-			            					<div class="input-group">
-				        						<input type="text" class="form-control" required placeholder="کد تخفیف">
-				        						<div class="input-group-append ">
-													<button class="btn btn-outline-primary-2 d-flex" type="submit"><i class="icon-long-arrow-left mx-auto"></i></button>
-												</div><!-- .End .input-group-append -->
-			        						</div><!-- End .input-group -->
-			            				</form>
-			            			</div><!-- End .cart-discount -->
 
-			            			<a href="#" class="btn btn-outline-dark-2"><span>بروز رسانی سبد خرید</span><i class="icon-refresh"></i></a>
-		            			</div><!-- End .cart-bottom -->
-	                		</div><!-- End .col-lg-9 -->
-	                		<aside class="col-lg-3">
-	                			<div class="summary summary-cart text-right">
-	                				<h3 class="summary-title">قیمت کل سبدخرید</h3><!-- End .summary-title -->
 
-	                				<table class="table table-summary">
-	                					<tbody>
-	                						<tr class="summary-subtotal">
-	                							<td>جمع کلی:</td>
-	                							<td>تومان160.00</td>
-	                						</tr><!-- End .summary-subtotal -->
-	                						<tr class="summary-shipping">
-	                							<td>حمل:</td>
-	                							<td>&nbsp;</td>
-	                						</tr>
+                                        <div class="col-12 p-0">
+                                            <div class="d-flex flex-column align-items-start">
+                                                <label>کشور *</label>
+                                                <input type="text" class="form-control" required>
+                                            </div>
+                                        </div>
 
-	                						<tr class="summary-shipping-row">
-	                							<td>
-													<div class="custom-control custom-radio">
-														<input type="radio" id="free-shipping" name="shipping" class="custom-control-input">
-														<label class="custom-control-label  ml-0 label4512" for="free-shipping">ارسال رایگان</label>
-													</div><!-- End .custom-control -->
-	                							</td>
-	                							<td>تومان0.00</td>
-	                						</tr><!-- End .summary-shipping-row -->
+                                        <div class="col-12 p-0">
+                                            <div class="d-flex flex-column align-items-start">
+                                                <label>خیابان*</label>
+                                                <input type="text" class="form-control" placeholder="House number and Street name" required>
+                                                <input type="text" class="form-control" placeholder="Appartments, suite, unit etc ..." required>
+                                            </div>
+                                        </div>
+	            						<div class="row">
+		                					<div class="col-sm-6">
+                                                <div class="d-flex flex-column align-items-start">
+                                                    <label>شهر/استان*</label>
+                                                    <input type="text" class="form-control" required>
+                                                </div>
 
-	                						<tr class="summary-shipping-row">
-	                							<td>
-	                								<div class="custom-control custom-radio">
-														<input type="radio" id="standart-shipping" name="shipping" class="custom-control-input">
-														<label class="custom-control-label  ml-0 label4512" for="standart-shipping">لورم ایپسوم متن :</label>
-													</div><!-- End .custom-control -->
-	                							</td>
-	                							<td>تومان10.00</td>
-	                						</tr><!-- End .summary-shipping-row -->
+		                					</div><!-- End .col-sm-6 -->
 
-	                						<tr class="summary-shipping-row">
-	                							<td>
-	                								<div class="custom-control custom-radio">
-														<input type="radio" id="express-shipping" name="shipping" class="custom-control-input">
-														<label class="custom-control-label  ml-0 label4512" for="express-shipping">لورم ایپسوم :</label>
-													</div><!-- End .custom-control -->
-	                							</td>
-	                							<td>تومان20.00</td>
-	                						</tr><!-- End .summary-shipping-row -->
+		                					<div class="col-sm-6">
+                                                <div class="d-flex flex-column align-items-start">
+                                                    <label>کشور / استان *</label>
+                                                    <input type="text" class="form-control" required>
+                                                </div>
 
-	                						<tr class="summary-shipping-estimate">
-	                							<td>برآورد برای کشور شما<br> <a href="dashboard.html">تغییر آدرس</a></td>
-	                							<td>&nbsp;</td>
-	                						</tr><!-- End .summary-shipping-estimate -->
+		                					</div><!-- End .col-sm-6 -->
+		                				</div><!-- End .row -->
 
-	                						<tr class="summary-total">
-	                							<td>کل:</td>
-	                							<td>تومان160.00</td>
-	                						</tr><!-- End .summary-total -->
-	                					</tbody>
-	                				</table><!-- End .table table-summary -->
+		                				<div class="row">
+		                					<div class="col-sm-6">
+                                                <div class="d-flex flex-column align-items-start">
+                                                    <label>کد پستی  *</label>
+                                                    <input type="text" class="form-control" required>
+                                                </div>
 
-	                				<a href="checkout.html" class="btn btn-outline-primary-2 btn-order btn-block">برای تسویه حساب ادامه دهید</a>
-	                			</div><!-- End .summary -->
+		                					</div><!-- End .col-sm-6 -->
 
-		            			<a href="category.html" class="btn btn-outline-dark-2 btn-block mb-3"><span>ادامه خرید</span><i class="icon-refresh"></i></a>
-	                		</aside><!-- End .col-lg-3 -->
-	                	</div><!-- End .row -->
+		                					<div class="col-sm-6">
+                                                <div class="d-flex flex-column align-items-start">
+                                                    <label>تلفن تماس *</label>
+                                                    <input type="tel" class="form-control" required>
+                                                </div>
+
+		                					</div><!-- End .col-sm-6 -->
+		                				</div><!-- End .row -->
+                                        <div class="d-flex flex-column align-items-start">
+                                            <label>آدرس ایمیل *</label>
+                                            <input type="email" class="form-control" required>
+                                        </div>
+
+
+	        							<div class="custom-control custom-checkbox d-flex align-items-center justify-content-start">
+											<input type="checkbox" class="custom-control-input" id="checkout-create-acc">
+											<label class="custom-control-label label4512" for="checkout-create-acc">ایجاد حساب کاربری؟</label>
+										</div><!-- End .custom-checkbox -->
+
+										<div class="custom-control custom-checkbox d-flex align-items-center justify-content-start">
+											<input type="checkbox" class="custom-control-input" id="checkout-diff-address">
+											<label class="custom-control-label label4512" for="checkout-diff-address">به آدرس دیگری ارسال شود؟</label>
+										</div><!-- End .custom-checkbox -->
+                                        <div class="d-flex flex-column align-items-start">
+                                            <label>یادداشت های سفارش (اختیاری)</label>
+                                            <textarea class="form-control" cols="30" rows="4" placeholder="نکاتی در مورد سفارش شما، به عنوان مثال یادداشت های ویژه برای تحویل"></textarea>
+                                        </div>
+
+		                		</div><!-- End .col-lg-9 -->
+		                		<aside class="col-lg-3">
+		                			<div class="summary">
+		                				<h3 class="summary-title text-right">سفارش شما</h3><!-- End .summary-title -->
+
+		                				<table class="table table-summary">
+		                					<thead>
+		                						<tr>
+		                							<th>تولید - محصول</th>
+		                							<th>جمع</th>
+		                						</tr>
+		                					</thead>
+
+		                					<tbody>
+		                						<tr>
+		                							<td><a href="#">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</a></td>
+		                							<td>تومان84.00</td>
+		                						</tr>
+
+		                						<tr>
+		                							<td><a href="#">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</a></td>
+		                							<td>تومان76,00</td>
+		                						</tr>
+		                						<tr class="summary-subtotal">
+		                							<td>جمع فرعی:</td>
+		                							<td>تومان160.00</td>
+		                						</tr><!-- End .summary-subtotal -->
+		                						<tr>
+		                							<td>نوع ارسال:</td>
+		                							<td>ارسال رایگان</td>
+		                						</tr>
+		                						<tr class="summary-total">
+		                							<td>کل:</td>
+		                							<td>تومان160.00</td>
+		                						</tr><!-- End .summary-total -->
+		                					</tbody>
+		                				</table><!-- End .table table-summary -->
+
+		                				<div class="accordion-summary" id="accordion-payment">
+										    <div class="card">
+										        <div class="card-header" id="heading-1">
+										            <h2 class="card-title">
+										                <a role="button" data-toggle="collapse" href="#collapse-1" aria-expanded="true" aria-controls="collapse-1">
+										                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
+										                </a>
+										            </h2>
+										        </div><!-- End .card-header -->
+										        <div id="collapse-1" class="collapse show" aria-labelledby="heading-1" data-parent="#accordion-payment">
+										            <div class="card-body">
+                                                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است 
+										            </div><!-- End .card-body -->
+										        </div><!-- End .collapse -->
+										    </div><!-- End .card -->
+
+										    <div class="card">
+										        <div class="card-header" id="heading-2">
+										            <h2 class="card-title">
+										                <a class="collapsed" role="button" data-toggle="collapse" href="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
+										                    پرداخت ها را چک کنید
+										                </a>
+										            </h2>
+										        </div><!-- End .card-header -->
+										        <div id="collapse-2" class="collapse" aria-labelledby="heading-2" data-parent="#accordion-payment">
+										            <div class="card-body">
+                                                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است 
+										            </div><!-- End .card-body -->
+										        </div><!-- End .collapse -->
+										    </div><!-- End .card -->
+
+										    <div class="card">
+										        <div class="card-header" id="heading-3">
+										            <h2 class="card-title">
+										                <a class="collapsed" role="button" data-toggle="collapse" href="#collapse-3" aria-expanded="false" aria-controls="collapse-3">
+                                                            پرداخت نقدی هنگام تحویل
+										                </a>
+										            </h2>
+										        </div><!-- End .card-header -->
+										        <div id="collapse-3" class="collapse" aria-labelledby="heading-3" data-parent="#accordion-payment">
+										            <div class="card-body">Qلورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است  
+										            </div><!-- End .card-body -->
+										        </div><!-- End .collapse -->
+										    </div><!-- End .card -->
+
+										    <div class="card">
+										        <div class="card-header" id="heading-4">
+										            <h2 class="card-title">
+										                <a class="collapsed" role="button" data-toggle="collapse" href="#collapse-4" aria-expanded="false" aria-controls="collapse-4">
+										                    پی پال <small class="float-right paypal-link">پی پال چیست؟</small>
+										                </a>
+										            </h2>
+										        </div><!-- End .card-header -->
+										        <div id="collapse-4" class="collapse" aria-labelledby="heading-4" data-parent="#accordion-payment">
+										            <div class="card-body">
+										                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است 
+										            </div><!-- End .card-body -->
+										        </div><!-- End .collapse -->
+										    </div><!-- End .card -->
+
+										    <div class="card">
+										        <div class="card-header" id="heading-5">
+										            <h2 class="card-title">
+										                <a class="collapsed" role="button" data-toggle="collapse" href="#collapse-5" aria-expanded="false" aria-controls="collapse-5">
+										                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
+										                    <img src="assets/images/payments-summary.png" alt="payments cards">
+										                </a>
+										            </h2>
+										        </div><!-- End .card-header -->
+										        <div id="collapse-5" class="collapse" aria-labelledby="heading-5" data-parent="#accordion-payment">
+										            <div class="card-body"> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است 
+										            </div><!-- End .card-body -->
+										        </div><!-- End .collapse -->
+										    </div><!-- End .card -->
+										</div><!-- End .accordion -->
+
+		                				<button type="submit" class="btn btn-outline-primary-2 btn-order btn-block">
+		                					<span class="btn-text">ثبت سفارش</span>
+		                					<span class="btn-hover-text">به پرداخت ادامه دهید</span>
+		                				</button>
+		                			</div><!-- End .summary -->
+		                		</aside><!-- End .col-lg-3 -->
+		                	</div><!-- End .row -->
+            			</form>
 	                </div><!-- End .container -->
-                </div><!-- End .cart -->
+                </div><!-- End .checkout -->
             </div><!-- End .page-content -->
         </main><!-- End .main -->
 
@@ -1028,7 +1114,7 @@
 
                     <div class="form-box">
                         <div class="form-tab">
-                            <ul class="nav nav-pills nav-fill nav-border-anim" role="tablist">
+                            <ul class="nav nav-pills nav-fill" role="tablist">
                                 <li class="nav-item">
                                     <a class="nav-link active" id="signin-tab" data-toggle="tab" href="#signin" role="tab" aria-controls="signin" aria-selected="true">Sign In</a>
                                 </li>
@@ -1040,42 +1126,42 @@
                                 <div class="tab-pane fade show active" id="signin" role="tabpanel" aria-labelledby="signin-tab">
                                     <form action="#">
                                         <div class="form-group">
-                                            <label for="singin-email">نام کاربری یا آدرس ایمیل *</label>
+                                            <label for="singin-email">Username or email address *</label>
                                             <input type="text" class="form-control" id="singin-email" name="singin-email" required>
                                         </div><!-- End .form-group -->
 
                                         <div class="form-group">
-                                            <label for="singin-password">کلمه عبور *</label>
+                                            <label for="singin-password">Password *</label>
                                             <input type="password" class="form-control" id="singin-password" name="singin-password" required>
                                         </div><!-- End .form-group -->
 
                                         <div class="form-footer">
                                             <button type="submit" class="btn btn-outline-primary-2">
-                                                <span>ورود</span>
-                                                <i class="icon-long-arrow-left"></i>
+                                                <span>LOG IN</span>
+                                                <i class="icon-long-arrow-right"></i>
                                             </button>
 
                                             <div class="custom-control custom-checkbox">
                                                 <input type="checkbox" class="custom-control-input" id="signin-remember">
-                                                <label class="custom-control-label label4512" for="signin-remember">مرا به خاطر بسپار</label>
+                                                <label class="custom-control-label" for="signin-remember">Remember Me</label>
                                             </div><!-- End .custom-checkbox -->
 
-                                            <a href="#" class="forgot-link">رمز عبور خود را فراموش کرده اید؟</a>
+                                            <a href="#" class="forgot-link">Forgot Your Password?</a>
                                         </div><!-- End .form-footer -->
                                     </form>
                                     <div class="form-choice">
-                                        <p class="text-center">یا با وارد شوید</p>
+                                        <p class="text-center">or sign in with</p>
                                         <div class="row">
                                             <div class="col-sm-6">
                                                 <a href="#" class="btn btn-login btn-g">
                                                     <i class="icon-google"></i>
-                                                    با گوگل وارد شوید
+                                                    Login With Google
                                                 </a>
                                             </div><!-- End .col-6 -->
                                             <div class="col-sm-6">
                                                 <a href="#" class="btn btn-login btn-f">
                                                     <i class="icon-facebook-f"></i>
-                                                    برای ورود با فیس بوک
+                                                    Login With Facebook
                                                 </a>
                                             </div><!-- End .col-6 -->
                                         </div><!-- End .row -->
@@ -1084,40 +1170,40 @@
                                 <div class="tab-pane fade" id="register" role="tabpanel" aria-labelledby="register-tab">
                                     <form action="#">
                                         <div class="form-group">
-                                            <label for="register-email">آدرس ایمیل شما *</label>
+                                            <label for="register-email">Your email address *</label>
                                             <input type="email" class="form-control" id="register-email" name="register-email" required>
                                         </div><!-- End .form-group -->
 
                                         <div class="form-group">
-                                            <label for="register-password">کلمه عبور *</label>
+                                            <label for="register-password">Password *</label>
                                             <input type="password" class="form-control" id="register-password" name="register-password" required>
                                         </div><!-- End .form-group -->
 
                                         <div class="form-footer">
                                             <button type="submit" class="btn btn-outline-primary-2">
-                                                <span>ثبت نام</span>
-                                                <i class="icon-long-arrow-left"></i>
+                                                <span>SIGN UP</span>
+                                                <i class="icon-long-arrow-right"></i>
                                             </button>
 
                                             <div class="custom-control custom-checkbox">
                                                 <input type="checkbox" class="custom-control-input" id="register-policy" required>
-                                                <label class="custom-control-label label4512" for="register-policy">من موافقم <a href="#">شرایط و ظوابط </a> *</label>
+                                                <label class="custom-control-label" for="register-policy">I agree to the <a href="#">privacy policy</a> *</label>
                                             </div><!-- End .custom-checkbox -->
                                         </div><!-- End .form-footer -->
                                     </form>
                                     <div class="form-choice">
-                                        <p class="text-center">یا با وارد شوید</p>
+                                        <p class="text-center">or sign in with</p>
                                         <div class="row">
                                             <div class="col-sm-6">
                                                 <a href="#" class="btn btn-login btn-g">
                                                     <i class="icon-google"></i>
-                                                    با گوگل وارد شوید
+                                                    Login With Google
                                                 </a>
                                             </div><!-- End .col-6 -->
                                             <div class="col-sm-6">
                                                 <a href="#" class="btn btn-login  btn-f">
                                                     <i class="icon-facebook-f"></i>
-                                                    برای ورود با فیس بوک
+                                                    Login With Facebook
                                                 </a>
                                             </div><!-- End .col-6 -->
                                         </div><!-- End .row -->
@@ -1138,7 +1224,6 @@
     <script src="assets/js/jquery.waypoints.min.js"></script>
     <script src="assets/js/superfish.min.js"></script>
     <script src="assets/js/owl.carousel.min.js"></script>
-    <script src="assets/js/bootstrap-input-spinner.js"></script>
     <!-- Main JS File -->
     <script src="assets/js/main.js"></script>
 </body>

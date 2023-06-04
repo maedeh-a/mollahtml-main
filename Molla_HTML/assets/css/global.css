@@ -231,9 +231,7 @@ body .form-tab .form-footer .forgot-link {
 /* mobile style */
 /* index-9 */
 @media (max-width: 992px) {
-	.page-wrapper .header .header-top .header-right {
-		margin-left: auto;
-	}
+
 	body .header-6 .logo {
 
 		right: 1rem;
@@ -317,7 +315,6 @@ body .product-col .product-media {
 }
 body .cart-bottom .btn {
 	margin-right: auto;
-	min-width: 152px;
 	margin-left: 0;
 }
 body .cart-discount .form-control {
@@ -332,4 +329,87 @@ body .custom-control-label::before {
 	background-color: #f9f9f9;
 	border: 1px solid #dadada;
 	box-shadow: none !important;
+}
+body .compare-dropdown {
+	padding-right: 2.5rem;
+	padding-left: 0;
+}
+body .compare-actions .btn {
+	margin-left: 0;
+	margin-right: auto;
+
+}
+body .cart-dropdown .btn-remove, .compare-dropdown .btn-remove {
+	left: -.55rem;
+	right: unset;
+}
+body .compare-product-title {
+	text-align: right;
+}
+body .cart-dropdown .product {
+	position: relative;
+	display: flex;
+	align-items: flex-start;
+	padding: 1.6rem 0rem 1.6rem 2.4rem;
+	box-shadow: none;
+	margin: 0 !important;
+	border: none;
+	border-bottom: 1px solid #ebebeb;
+	box-shadow: none !important;
+}
+body .social-icon:not(:last-child) {
+	margin-left: 1rem;
+	margin-right: 0;
+}
+@media (max-width: 992px) {
+	body .product-col .product {
+		padding-right: 0rem;
+		padding-left: 0;
+
+	}
+	.table-mobile .product-col .product-title {
+		text-align: right;
+	}
+	body .cart-dropdown .dropdown-menu.dropdown-menu-right,body .compare-dropdown .dropdown-menu.dropdown-menu-right {
+		right: -200px;
+	}
+	body .cart-bottom .btn {
+		margin-right: 0;
+		margin-left: 0;
+	}
+}
+/* Checkout */
+body .table.table-summary thead th:last-child, body .table.table-summary tbody td:last-child {
+	text-align: left;
+	min-width: 100px;
+}
+body .accordion-summary .card-title a {
+	text-align: right;
+	padding: .7rem 3rem .7rem 0rem;
+}
+body .accordion-summary .card-title a::before {
+	content: '';
+	width: 1.6rem;
+	height: 1.6rem;
+	border-radius: 50%;
+	border: 0.1rem solid #c96;
+	left: auto;
+	right: 0;
+	top: .7rem;
+	transform: translateY(0);
+	-ms-transform: translateY(0);
+}
+body .accordion-summary .card-title a::after {
+	content: '';
+	display: block;
+	width: .6rem;
+	height: .6rem;
+	position: absolute;
+	right: .5rem;
+	top: 1.2rem;
+	border-radius: 50%;
+	background-color: #c96;
+	visibility: visible;
+	opacity: 1;
+	transition: all .3s;
 }
