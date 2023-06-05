@@ -413,3 +413,31 @@ body .accordion-summary .card-title a::after {
 	opacity: 1;
 	transition: all .3s;
 }
+/* dashboard */
+.dashboard .nav-dashboard {
+	text-align: right;
+}
+body .nav-dashboard .nav-link.active {
+	padding-right: 2rem;
+}
+body .nav-dashboard .nav-link::before {
+	font-family: "molla";
+	content: '\f273';
+	display: block;
+	font-size: 1.5rem;
+	line-height: 1;
+	position: absolute;
+	top: 50%;
+	left: -15px;
+	margin-top: -7.5px;
+	transition: all .3s;
+	opacity: 0;
+}
+body .nav-dashboard .nav-link.active::before {
+	right: 0;
+	opacity: 1;
+	left: auto;
+}
+.tab-content .tab-dashboard p{
+	text-align: right;	
+}
